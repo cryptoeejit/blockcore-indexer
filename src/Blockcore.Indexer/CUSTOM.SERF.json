@@ -1,0 +1,60 @@
+{
+   "Chain": {
+      "Name": "SERF Custom Blockchain",
+      "Symbol": "SERF",
+      "Description": "Blockcore Custom Blockchain",
+      "Url": "https://www.blockcore.net/",
+      "Logo": "https://www.blockcore.net/assets/blockcore-256x256.png",
+      "Icon": "https://www.blockcore.net/assets/blockcore-256x256.png",
+      "Color": "#f3b623"
+   },
+   "Network": {
+      "NetworkConsensusFactoryType": "Blockcore.Consensus.BlockInfo.PosConsensusFactory, Blockcore",
+      "NetworkType": "Blockcore.Networks.City.Networks.SERFMain, Blockcore.Networks.SERF",
+      "NetworkPubkeyAddressPrefix": 63,
+      "NetworkScriptAddressPrefix": 110,
+      "NetworkWitnessPrefix": "serf",
+      "P2PPort": 15111,
+      "RPCPort": 15112,
+      "APIPort": 15113
+   },
+   "Indexer": {
+      "StoreRawTransactions": true
+   },
+   "Explorer": {
+      "Indexer": {
+         "ApiUrl": "http://localhost:9910/api",
+         "DocUrl": "http://localhost:9910/docs"
+      },
+      "Currency": {
+         "ApiUrl": "https://api.coincap.io/v2/rates",
+         "AutoConvert": false
+      },
+      "Ticker": {
+         "WebUrl": "https://coinpaprika.com/coin/btc-bitcoin/",
+         "ApiUrl": "https://api.coinpaprika.com/v1/tickers/btc-bitcoin?quotes=USD,BTC",
+         "PricePath": "quotes.BTC.price",
+         "PricePathBTC": "quotes.BTC.price",
+         "PricePathUSD": "quotes.USD.price",
+         "PercentagePath": "quotes.BTC.percent_change_1h",
+         "IsBitcoinPrice": true
+      },
+      "Setup": {
+         "Title": "Your Blockchain Explorer",
+         "Footer": "Blockchain for Blockcore. Empowering developers to make custom blockchains.",
+         "Links": [
+            {
+               "icon": "fab fa-github",
+               "url": "https://github.com/block-core"
+            },
+            {
+               "icon": "fas fa-link",
+               "url": "https://www.blockcore.net/"
+            }
+         ]
+      },
+      "Features": {
+         "POSWeight": false
+      }
+   }
+}

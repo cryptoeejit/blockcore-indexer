@@ -35,6 +35,15 @@
          },
          "applicationUrl": "http://localhost:9910/"
       },
+      "LOCAL (SERF)": {
+         "commandName": "Project",
+         "commandLineArgs": "--chain=SERF --local",
+         "launchBrowser": true,
+         "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+         },
+         "applicationUrl": "http://localhost:9910/"
+      },
       "STRATIS": {
          "commandName": "Project",
          "commandLineArgs": "--chain=STRAT",
@@ -182,6 +191,15 @@
       "CYBITS": {
          "commandName": "Project",
          "commandLineArgs": "--chain=CYBITS",
+         "launchBrowser": true,
+         "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+         },
+         "applicationUrl": "http://localhost:9910/"
+      },
+      "SERF": {
+         "commandName": "Project",
+         "commandLineArgs": "--chain=SERF",
          "launchBrowser": true,
          "environmentVariables": {
             "ASPNETCORE_ENVIRONMENT": "Development"
